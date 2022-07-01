@@ -43,6 +43,15 @@ public class MainActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+
+            float number1 = 6;
+            float number2 = 4;
+            Operacoes operacoes = new Operacoes(number1, number2);
+            System.out.println(operacoes.soma());
+            System.out.println(operacoes.subtracao());
+            System.out.println(operacoes.multiplicacao());
+            System.out.println(operacoes.divisao());
+
     }
 
     @Override
