@@ -17,6 +17,7 @@ import com.example.helloworld.databinding.ActivityMainBinding;
 
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -29,6 +30,9 @@ public class MainActivity extends AppCompatActivity {
 
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+
+        textView = (TextView)findViewById(R.id.textView);
+        System.out.println(textView.getText());
 
         setSupportActionBar(binding.toolbar);
 
